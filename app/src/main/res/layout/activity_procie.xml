@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".procie">
+
+    <LinearLayout
+        android:id="@+id/wholeprocie"
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioGroup
+            android:id="@+id/chooseprocie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+
+            <RadioButton
+                android:id="@+id/procie1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I9 INTEL 9900K"
+                android:gravity="left" />
+
+
+            <RadioButton
+                android:id="@+id/procie2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="RYZEN 3RD SERIES 480" />
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_procie"
+        android:layout_below="@id/wholeprocie"
+        android:layout_centerHorizontal="true"
+        android:text="ADD PROCIE"
+        />
+
+</RelativeLayout>

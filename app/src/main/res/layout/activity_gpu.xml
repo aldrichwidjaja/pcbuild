@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gpu">
+
+    <LinearLayout
+        android:id="@+id/wholegpu"
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioGroup
+            android:id="@+id/choosegpu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+
+            <RadioButton
+                android:id="@+id/gpu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZOTAC GTX 1660TI ULTIMATE EDITION"
+                android:gravity="left" />
+
+
+            <RadioButton
+                android:id="@+id/gpu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="GALAX RTX 2080 ULTRA OVERCLOCK" />
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_gpu"
+        android:layout_below="@id/wholegpu"
+        android:layout_centerHorizontal="true"
+        android:text="ADD GPU"
+        />
+
+</RelativeLayout>
